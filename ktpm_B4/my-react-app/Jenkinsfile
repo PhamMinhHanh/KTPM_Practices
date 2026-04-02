@@ -37,7 +37,7 @@ pipeline {
 
     post {
         success {
-            archiveArtifacts artifacts: 'dist/**/*', fingerprint: true, allowEmptyArchive: false
+            archiveArtifacts artifacts: 'ktpm_B4/my-react-app/dist/**/*' false
         }
         failure {
             echo 'Pipeline thất bại - xem log từng stage (Install & Lint & Build).'

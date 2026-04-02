@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     triggers {
-        pollSCM('H/1 * * * *')
+        pollSCM('H/3 * * * *')
     }
 
     options {
         timeout(time: 30, unit: 'MINUTES')
-        timestamp()
+        timestamps()
     }
 
     stages {
